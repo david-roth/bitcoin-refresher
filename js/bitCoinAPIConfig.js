@@ -16,7 +16,7 @@ var disposable = Rx.Scheduler.default.schedulePeriodic(
     5000, /* 5 second */
     function(){
         getBitCoinPrice().subscribe(function (data) {
-            bitCoinsRetrieved.onNext(data.bpi.USD.rate_float)
+            bitCoinsRetrieved.onNext(data.bpi.USD.rate_float);
             averageArray.push(data.bpi.USD.rate_float)
         },function(e){
             console.log(e)
