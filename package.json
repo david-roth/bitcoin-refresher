@@ -1,0 +1,7 @@
+{
+  "name": "bitcoin-refresher",
+  "version": "0.0.1",
+  "dependencies": {
+    "rx": "latest"
+  }
+}
